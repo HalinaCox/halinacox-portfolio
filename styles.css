@@ -207,8 +207,8 @@ main {
   }
 
   .site-name {
-    font-size: 18px; /* Slightly smaller on mobile */
-    display: block; /* Show on mobile */
+    font-size: 18px;
+    display: block;
   }
 
   /* Show hamburger menu on mobile */
