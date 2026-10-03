@@ -98,6 +98,7 @@ h2{font-family:var(--serif);font-weight:500;font-variation-settings:"opsz" 36;le
 
 /* About */
 .about-grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2.5rem,6vw,6rem);align-items:start}
+.about-photo{display:none}
 .about-body p{margin:0 0 1.35rem;max-width:36rem}
 .about-body p:first-child{font-size:1.3rem;line-height:1.55;color:var(--ink);font-weight:450}
 .about-body p{color:var(--muted)}
@@ -170,6 +171,7 @@ footer a:hover{color:var(--on-night)}
   .last{grid-column:1 / 7;grid-row:3;justify-self:end;margin-top:-.42em}
   .intro{grid-column:1 / 7;grid-row:4;max-width:none;padding:2.5rem 0 0}
   .about-grid{grid-template-columns:1fr}
+  .about-photo{display:block;width:min(75%,340px);aspect-ratio:3/4;object-fit:cover;object-position:52% 18%;border-radius:999px 999px 0 0;background:#3a2c24;margin:2rem auto 0}
   .role{grid-template-columns:1fr;gap:.6rem}
   .years{padding:0}
   .principles{grid-template-columns:1fr}
