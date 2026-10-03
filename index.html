@@ -1,53 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Halina Cox</title>
-    <link rel="stylesheet" href="/styles.css"/>
-    <link rel="stylesheet" href="/index.css"/>
-    <link rel="icon" href="/images/favicon.png">
-    <link rel="apple-touch-icon" href="/images/favicon.png">
-  </head>
-  <body>
-    <div id="header-placeholder"></div>
-    <main>
-      <section class="hero">
-         <div class="hero-frame">
-          <img
-            class="hero-img"
-            src="/images/home-img.jpg"
-            alt="Halina Cox headshot"
-          />
-        </div>
-      </section>
-      <section class="content">
-        <div class="me">
-          <p>
-            Hi! I'm Halina — a <strong>software engineer and web developer</strong> helping 
-            <strong>small businesses, founders, and personal brands</strong> build a thoughtful 
-            online presence. With a background as a full-stack engineer at Cisco Meraki, I bring 
-            real technical depth and personal attention to every project.
-          </p>
-        </div>
-      </section>
-      <div class="bottom-cta">
-        <a href="/about" class="about-cta">MORE ABOUT ME</a>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Halina Cox | Operations, AI &amp; Technology</title>
+<meta name="description" content="Halina Cox leads operations at Enam Co., with a background in executive operations and full-stack software engineering at Cisco Meraki.">
+<meta property="og:title" content="Halina Cox | Operations, AI &amp; Technology">
+<meta property="og:description" content="Strategic operator. Technical builder. Operations leader with a background in executive operations and full-stack engineering at Cisco Meraki.">
+<meta property="og:image" content="https://halinacox.com/images/portrait.jpg">
+<meta property="og:url" content="https://halinacox.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232A221E'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='%23C8BBAE'%3EHC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..700&family=Hanken+Grotesk:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="#top">Halina Cox</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-grid">
+    <h1 class="name first" aria-label="Halina Cox"><span class="line"><span>Halina</span></span></h1>
+    <div class="arch-wrap">
+      <div class="arch-line" aria-hidden="true"></div>
+      <div class="arch"><img src="/images/portrait.jpg" alt="Portrait of Halina Cox" width="1145" height="1374"></div>
+    </div>
+    <div class="intro">
+      <p class="tagline">Strategic operator. Technical builder.</p>
+      <p>I've run executive operations, led global programs, and shipped production software at companies ranging from seed-stage startups to the Fortune 500. Today I bring all three to the operational infrastructure of a growing tech company, using AI and automation to simplify workflows and help teams work more effectively.</p>
+      <div class="actions">
+        <a class="btn" href="#experience">Explore my experience</a>
+        <a class="link" href="https://www.linkedin.com/in/halinacox/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-    </main>
-    <div id="footer-placeholder"></div>
-    <script>
-      fetch('/header.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('header-placeholder').innerHTML = data;
-        });
-      fetch('/footer.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('footer-placeholder').innerHTML = data;
-        });
-    </script>
-    <script src="/menu.js"></script>
-  </body>
+    </div>
+    <p class="name last" aria-hidden="true"><span class="line"><span>Cox</span></span></p>
+  </div>
+</header>
+
+<main>
+  <section class="block" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div>
+          <p class="sec-label">About</p>
+          <h2>Operations, from both sides of the system.</h2>
+        </div>
+        <div class="about-body">
+          <p>My career has taken me from running onboarding for a global organization to writing production code. Having worked on both sides of the system shapes how I approach everything I build.</p>
+          <p>I understand what leaders need to make decisions, what teams need to execute, and what it takes to build systems that keep working once the organization grows past them.</p>
+          <p>At Enam Co., I lead operations across people ops, IT, security, compliance, benefits, vendors, and the workplace, balancing day-to-day problem-solving with building processes that scale.</p>
+          <p>I'm a first-generation college graduate raised in a hardworking immigrant family, and I worked my way through UC Davis. Curiosity has carried me through every career change since, including teaching myself to code and moving from operations into software engineering at Cisco Meraki.</p>
+        </div>
+      </div>
+      <dl class="facts">
+        <div><dt>8</dt><dd>International regions supported by the programs I ran at Cisco Meraki</dd></div>
+        <div><dt>2</dt><dd>Industry awards for the API platform I helped build</dd></div>
+        <div><dt>100+</dt><dd>Weddings, special events, and corporate programs planned and delivered</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <div class="wrap">
+      <div class="exp-head">
+        <div>
+          <p class="sec-label">Experience</p>
+          <h2>Where I've done the work</h2>
+        </div>
+        <p>Events, executive support, global programs, engineering, and now company-wide operations, each one built on the last.</p>
+      </div>
+      <ol class="roles" reversed>
+        <li class="role">
+          <div class="years">2026 to now</div>
+          <div><h3>Operations</h3><div class="co">Enam Co.</div></div>
+          <p>I lead operations for a Series A tech company, owning onboarding and offboarding, people ops, benefits, IT and security, compliance, vendor contracts, and facilities.</p>
+        </li>
+        <li class="role">
+          <div class="years">2022 to 2025</div>
+          <div><h3>Full-Stack Software Engineer</h3><div class="co">Cisco Meraki</div></div>
+          <p>After teaching myself to code, I completed Hack Reactor and an apprenticeship, then joined Meraki's Dashboard API team as a full-stack engineer. As a core engineer on Meraki Integrations and Analytics, I built REST APIs in Rails and PostgreSQL, along with React and TypeScript features used by thousands of network administrators. The platform went on to win the 2024 Postman Best API Award and the 2025 Developers' Choice Award. Along the way, I mentored early-career engineers and interns.</p>
+        </li>
+        <li class="role">
+          <div class="years">2018 to 2022</div>
+          <div><h3>Executive Operations &amp; Programs</h3><div class="co">Cisco Meraki</div></div>
+          <p>Owned the programs that let Meraki's Global Technical Support organization grow across eight international regions. I designed and standardized global onboarding and enablement, led OKR and KPI governance with leadership, and delivered more than 20 offsites, launches, and events for groups of 5 to 500+.</p>
+        </li>
+        <li class="role">
+          <div class="years">2017 to 2018</div>
+          <div><h3>Executive Assistant</h3><div class="co">Affirm</div></div>
+          <p>Supported senior leadership at a high-growth fintech, with a focus on execution and employee experience. I planned Affirm's inaugural Sales Kickoff and turned it into a documented, repeatable framework, ran leadership offsites and company-wide events, and launched company-wide recognition and parental leave programs.</p>
+        </li>
+        <li class="role">
+          <div class="years">2014 to 2018</div>
+          <div><h3>Program Manager, Events &amp; Operations</h3><div class="co">A Touch of Grace Events</div></div>
+          <p>Directed more than 80 large-scale client programs with six-figure budgets, led a team of five planners, and helped grow revenue fourfold. It's where I discovered my love for operations: turning someone's vision into a clear plan and an experience they'll remember.</p>
+        </li>
+      </ol>
+      <p class="edu"><strong>University of California, Davis.</strong> B.A. in Psychology, minor in Sociology. Also a Certified Scrum Master and a graduate of Hack Reactor's full-stack software engineering program.</p>
+    </div>
+  </section>
+
+  <section class="block" id="approach">
+    <div class="wrap">
+      <p class="sec-label">How I work with AI</p>
+      <p class="statement">My starting point is always the operational need.</p>
+      <p class="statement-note">AI is part of how I work every day. I use it to sharpen ideas, surface problems early, and test solutions quickly, always in service of what the business and its people need.</p>
+      <div class="principles">
+        <div class="principle">
+          <h3>Find the friction</h3>
+          <p>The handoff that drops, the request that sits in someone's inbox, the spreadsheet nobody trusts. Fixing the process comes before automating it.</p>
+        </div>
+        <div class="principle">
+          <h3>Automate with today's tools</h3>
+          <p>I use Claude, Claude Cowork, and ChatGPT to build and run workflows across Gmail, Google Drive, Slack, and other software, using connectors and MCP to bring tools and context together. I match the platform to the task, shape the instructions and context, and refine the workflow through hands-on iteration.</p>
+        </div>
+        <div class="principle">
+          <h3>Keep judgment human</h3>
+          <p>AI can draft, sort, and summarize. Decisions about people, money, and trust stay with people, and I design workflows so that line is always clear.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block contact" id="contact">
+    <div class="wrap">
+      <p class="sec-label">Contact</p>
+      <h2>Let's connect.</h2>
+      <form class="contact-form" action="https://formspree.io/f/xeezbdkl" method="POST">
+        <div class="field-row">
+          <label><span>Name</span><input name="name" type="text" autocomplete="name" required></label>
+          <label><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
+        </div>
+        <label><span>Message</span><textarea name="message" rows="4" required></textarea></label>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+        <button type="submit" class="btn btn-ink">Send message</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/halinacox/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/HalinaCox" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Halina Cox</span>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  requestAnimationFrame(function(){requestAnimationFrame(function(){root.classList.add('loaded')})});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  var nav=document.getElementById('nav');
+  function onScroll(){nav.classList.toggle('scrolled',window.scrollY>40)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var btn=document.getElementById('menuBtn');
+  function setMenu(open){nav.classList.toggle('open',open);btn.setAttribute('aria-expanded',open);btn.textContent=open?'Close':'Menu';document.body.style.overflow=open?'hidden':''}
+  btn.addEventListener('click',function(){setMenu(!nav.classList.contains('open'))});
+  document.querySelectorAll('#navLinks a').forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});
+
+  var form=document.querySelector('.contact-form');
+  if(form&&window.fetch){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var btn=form.querySelector('button'),status=form.querySelector('.form-status');
+      btn.disabled=true;status.textContent='Sending…';
+      fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+        .then(function(r){if(!r.ok)throw 0;form.reset();status.textContent="Thanks, your message is on its way. I'll be in touch soon."})
+        .catch(function(){status.textContent='That message didn\'t send. Please try again, or reach me on LinkedIn.'})
+        .then(function(){btn.disabled=false});
+    });
+  }
+  var links={};document.querySelectorAll('#navLinks a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){
+        Object.values(links).forEach(function(l){l.classList.remove('active')});
+        if(links[en.target.id])links[en.target.id].classList.add('active');
+      }});
+    },{rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('header.hero, main section').forEach(function(s){io.observe(s)});
+  }
+})();
+</script>
+</body>
 </html>
