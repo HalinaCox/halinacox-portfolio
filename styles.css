@@ -47,7 +47,7 @@ a{color:inherit}
 .nav ul a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
 .nav ul a:hover,.nav ul a.active{opacity:1}
 .nav ul a:hover::after,.nav ul a.active::after{transform:scaleX(1)}
-.nav.scrolled{background:color-mix(in srgb,var(--night) 88%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--night-line)}
+.nav.scrolled{background:rgba(42,34,30,.92);background:color-mix(in srgb,var(--night) 88%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--night-line)}
 .menu-btn{display:none;background:none;border:0;color:inherit;font:inherit;font-size:.95rem;padding:.5rem 0;cursor:pointer;letter-spacing:.02em}
 
 /* ---------- Hero ---------- */
@@ -178,6 +178,9 @@ footer a:hover{color:var(--on-night)}
   .aside{grid-template-columns:1fr;gap:.75rem}
 }
 @media (max-width:720px){
+  /* Always give the mobile nav a solid dark backdrop so the menu is visible everywhere */
+  .nav{background:var(--night);box-shadow:0 1px 0 var(--night-line)}
+  .nav.scrolled{background:var(--night)}
   .menu-btn{display:block;position:relative;z-index:3}
   .brand{position:relative;z-index:3}
   .nav ul{position:fixed;inset:0;flex-direction:column;justify-content:center;align-items:center;gap:2rem;background:var(--night);
