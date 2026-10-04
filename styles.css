@@ -183,8 +183,9 @@ footer a:hover{color:var(--on-night)}
   .nav.scrolled{background:var(--night)}
   .menu-btn{display:block;position:relative;z-index:3}
   .brand{position:relative;z-index:3}
-  .nav ul{position:fixed;inset:0;flex-direction:column;justify-content:center;align-items:center;gap:2rem;background:var(--night);
-    opacity:0;pointer-events:none;transition:opacity .35s;padding-top:env(safe-area-inset-top,0px);z-index:2}
+  .nav ul{position:fixed;top:0;left:0;right:0;bottom:0;width:100vw;height:100vh;height:100dvh;flex-direction:column;justify-content:center;align-items:center;gap:2rem;background:var(--night);
+    opacity:0;visibility:hidden;pointer-events:none;transition:opacity .35s,visibility .35s;padding-top:env(safe-area-inset-top,0px);z-index:1000}
+  .nav.open ul{opacity:1;visibility:visible;pointer-events:auto}
   .nav ul a{font-family:var(--serif);font-size:2rem;opacity:1}
   .nav.open ul{opacity:1;pointer-events:auto}
   .nav-inner{position:relative;z-index:2}

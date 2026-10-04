@@ -175,7 +175,27 @@
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 
   var btn=document.getElementById('menuBtn');
-  function setMenu(open){nav.classList.toggle('open',open);btn.setAttribute('aria-expanded',open);btn.textContent=open?'Close':'Menu';document.body.style.overflow=open?'hidden':''}
+  var savedScroll=0;
+  function setMenu(open){
+    nav.classList.toggle('open',open);
+    btn.setAttribute('aria-expanded',open);
+    btn.textContent=open?'Close':'Menu';
+    if(open){
+      savedScroll=window.scrollY;
+      document.body.style.position='fixed';
+      document.body.style.top='-'+savedScroll+'px';
+      document.body.style.left='0';
+      document.body.style.right='0';
+      document.body.style.width='100%';
+    } else {
+      document.body.style.position='';
+      document.body.style.top='';
+      document.body.style.left='';
+      document.body.style.right='';
+      document.body.style.width='';
+      window.scrollTo(0,savedScroll);
+    }
+  }
   btn.addEventListener('click',function(){setMenu(!nav.classList.contains('open'))});
   document.querySelectorAll('#navLinks a').forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});
